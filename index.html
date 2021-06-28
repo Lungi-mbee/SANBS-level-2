@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login SANBS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/51bc2aa7cb.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="new.js"></script>
+    
+ 
+</head>
+<body>
+  
+    <div id="section1">
+    <nav>
+        <div class="menu-icon">
+           <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">
+           SANBS
+        </div>
+        
+        <div class="nav-items">
+           <li ><a  href="#section1">Home</a></li>
+           <li ><a href="#section2">Services</a></li>
+           <li ><a href="#section3">Opperations</a></li>
+           <li><a href="#section4">Community</a></li>
+           <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+        </div>
+        <div class="search-icon">
+           <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+           <span class="fas fa-times"></span>
+        </div>
+        <form action="#">
+           <input type="search" class="search-data" placeholder="Search" required>
+           <button type="submit" class="fas fa-search"></button>
+        </form>
+     </nav>
+   </br></br>
+     <div>
+      <img src="img/logo.png">
+      </div>
+     <script>
+        const menuBtn = document.querySelector(".menu-icon span");
+        const searchBtn = document.querySelector(".search-icon");
+        const cancelBtn = document.querySelector(".cancel-icon");
+        const items = document.querySelector(".nav-items");
+        const form = document.querySelector("form");
+        menuBtn.onclick = ()=>{
+          items.classList.add("active");
+          menuBtn.classList.add("hide");
+          searchBtn.classList.add("hide");
+          cancelBtn.classList.add("show");
+        }
+        cancelBtn.onclick = ()=>{
+          items.classList.remove("active");
+          menuBtn.classList.remove("hide");
+          searchBtn.classList.remove("hide");
+          cancelBtn.classList.remove("show");
+          form.classList.remove("active");
+          cancelBtn.style.color = "#ff3d00";
+        }
+        searchBtn.onclick = ()=>{
+          form.classList.add("active");
+          searchBtn.classList.add("hide");
+          cancelBtn.classList.add("show");
+        }
+     </script>
+
+
+ 
+
+<div id='login-form'class='login-page'>
+   <div class="form-box">
+       <div class='button-box'>
+           <div id='btn'></div>
+           <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+           <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+       </div>
+       <form id='login' class='input-group-login'>
+           <input type='text'class='input-field'placeholder='Email Id' required >
+ <input type='password'class='input-field'placeholder='Enter Password' required>
+ <input type='checkbox'class='check-box'><span>Remember Password</span>
+ <button type='submit'class='submit-btn'><a href="myprofile.html">Log in</a></button>
+</form>
+<form id='register' class='input-group-register'>
+  <input type='text'class='input-field'placeholder='First Name' required>
+  <input type='text'class='input-field'placeholder='Last Name ' required>
+  <input type='email'class='input-field'placeholder='Email Id' required>
+  <input type='password'class='input-field'placeholder='Enter Password' required>
+  <input type='password'class='input-field'placeholder='Confirm Password'  required>
+  <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+           <button type='submit'class='submit-btn'>Register</button>
+   </form>
+   </div>
+</div>
+</div>
+<script>
+var x=document.getElementById('login');
+var y=document.getElementById('register');
+var z=document.getElementById('btn');
+function register()
+{
+x.style.left='-400px';
+y.style.left='50px';
+z.style.left='110px';
+}
+function login()
+{
+x.style.left='50px';
+y.style.left='450px';
+z.style.left='0px';
+}
+</script>
+<script>
+var modal = document.getElementById('login-form');
+window.onclick = function(event) 
+{
+   if (event.target == modal) 
+   {
+       modal.style.display = "none";
+   }
+}
+</script>
+
+</div>
+
+<div id="section2"  >
+   
+</br></br></br></br></br></br></br> </br> 
+    <center>
+   <div class="container2">
+       <div class="gif" align="right">
+        <img src="img/blooddonor.gif" align="right"class="img">
+        <div class="text-col">
+        <h3 class="title" align="justify" align="center">
+               THE WAY TO HELP ONE IN NEED OF LIFE !!
+               <div class="border"></div>
+           </h3>
+        </br></br></br> 
+        <div class="text-col">
+           <p class="text"align="justify"align="center"><b>DONATE</b>  to thousands of people</p>
+       </br>
+        <p class=message align="justify" align="center"> <i>Sometimes less is more </br>because what you
+               consider less</br> is
+               someone else's more, </br>be the reason
+               someone smile's or more so</br>
+                    survives.</i>
+           </p>
+           </div>
+         </br> </br> </br> </br> </br> 
+
+         <div class="icon-bar"align="justify" align="left">
+             
+            <a href="weight.html"><i class="fas fa-weight" ></i></a>
+            <a href="blood.html"><i  class="fas fa-tint"></i></a>
+            <a href="healthissues.html"><i class="fas fa-file-medical-alt"></i></a>
+            <a href="form.html"><i class="far fa-clipboard"></i></a>
+            <a href="comment.html"><i class="far fa-comments"></i></a>
+        </div>
+    </center>
+</div>
+  
+
+   
+</br></br></br></br></br></br></br></br></br>
+
+<div class="container2">
+<div class="vid" align="left">
+<iframe width="500" height="300" src="https://www.youtube.com/embed/Rc7soBSFkqg" 
+title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
+
+<div class="text-col">
+   
+<p align="right" align="justify" class="serv">
+   <center class="serv">
+   Services of the</br></br>
+   <b>SANBS</b></br></br>  
+   </center>
+   <center class="serv">
+We change lives of people with your</br>
+donations and save lives as they take a</br>
+breath of their second chance in life.
+</p> </br>
+<div class="container3">
+<div >
+   <img src="img/laptop.png" class="image1"  hspace="5px" vspace="5px">
+   <p class="words">we provide online </br>applications and </br>appointment dates.</p> 
+</div>
+
+<div >
+   <img src="img/screws.png" class="image2"  hspace="5px" vspace="5px">
+   <p class="words">Safety Precautions</br> and essential tools.</p>
+</div>
+
+
+<div >
+   <img src="img/book.png" class="image3"  hspace="5px" vspace="5px"> 
+   <p class="words">Quality insured with</br> evaluation criteria.</p>
+</div>
+</div>
+</div>
+</div>
+</br></br></br>
+<center>
+<h1>Rate Us </h1>
+
+				<div class="radio-container">
+				  <input type="radio" id="windows" name="os" />
+				  <label for="windows">Perfect</label>
+			
+				  <input type="radio" id="mac" name="os" />
+				  <label for="mac">Just Okay</label>
+			
+				  <input type="radio" id="linux" name="os" />
+				  <label for="linux">Not Well</label>
+				</div>
+ </center>
+</br></br></br></br></br></br></br></br></br></br>
+
+
+<div  id="section3" >
+
+   <div class="text">
+<p>
+   <b>SANBS Opperations</b></br></br>
+   The Ins and Outs of SANBS from the team of our</br>
+   good doctors to individuals giving a part of their</br>
+   lives for another without a doubt.
+</p> </br></br></br></br>
+
+
+<div class="container2"align="center">
+   <div >
+   <img src="img/pic1.png" class="image" > 
+   <p class="para"><b>Blood</br>
+   Donation Projects</b></br>
+   Have a look at donations </br>taking place and where </br>lives are saved.
+      </p>
+   </div>
+   
+<div >
+   <img src="img/pic2.png" class="image" >
+<p class="para">
+   <b>Reviews and Saved lives</b></br>
+   The people tell their experience</br>
+   and the saved </br>appretiate the donors.
+</p>
+
+</div>
+<div >
+   <img src="img/pic3.png" class="image" > 
+   <p class="para"><b>Our Team</b></br>
+  Proffesional associates and </br> volunteers behind the</br> works of saving lives.
+   </p>
+   </div>
+
+</div>
+</div>
+</br>
+<center>
+<div class="collapse">
+   <p>Fundamentals</p>
+   <div class="boxxe">
+     <label for="kelompok1">Blood in SA  <i float="left" class="fas fa-sort-down"></i></label>  <input type="checkbox" id = "kelompok1" >
+     <div class="wow" id = "kelompok1">
+      Blood donation
+      SANBS collects blood from volunteer unpaid donors and processes that blood into components for transfusion.[1] The donors are screened for health risks and tested for diseases on every donation. Not all parts of the donated blood are always used, such as with first time donors, to establish a history of negative test results in the donor before the blood is used in patients. The red blood cells from the first donation are discarded because they cannot be stored long enough to wait for a second donation and a second set of testing, but the blood plasma can be frozen and used.
+      
+      SANBS relies on donors that return consistently, as the history of testing makes it less likely to miss a positive result from a laboratory error or from a donation in the window period.[1] Testing has included nucleic acid testing (NAT) since 2005, which directly detects the virus instead of waiting for the body to develop an antibody. This test shortens but does not eliminate the window period.[2] SANBS performs NAT testing for each individual donor, instead of in pools.[3] NAT testing is expensive, and blood banks in many countries, such as Canada, perform the testing on pooled donor samples. The individual testing is more sensitive to window period donations.[4] The testing is performed at central laboratories in Johannesburg and Durban.
+      
+      History
+      The organisation was founded in 2001 from the merging of seven independent blood banks
+     </div>
+   </div>
+   <div class="boxxe">
+     <label for="kelompok2">Stats <i float="left" class="fas fa-sort-down"></i></label> <input type="checkbox" id = "kelompok2">
+     <div class="wow" id = "kelompok2">
+      How long does a unit of blood last in South Africa?
+Less than 1% of South Africans are active blood donors. A unit of blood only lasts 42 days after donation and, for this reason, it is important for blood donors to donate regularly.
+Facts about donating blood. The South African National Blood Service (SANBS) collects more than 1 000 000 units of blood a year. Voluntary, unpaid donations account for 100% of this life-giving supply. Donors come from all walks of life and SANBS’s total donor base numbers 491 000 donors. Some are more active than others and most are repeat-donors.
+     </div>
+   </div>
+   
+   </div>
+ </div>
+ </center>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+<center>
+<img style ="float:left; margin: 0px 30px 30px opx;" src="img/bloodlaptop.png" width="700px" heigh="200px"/>
+
+<p class="text"><b>Blood Donation Projects</b>
+</br></br>Second Chances</br></br>
+where people are determined to save lives </br>
+and trust SANBS to do it</br>
+successfully
+</p>
+</br></br></br></br></br>
+
+<button class="press"><a href="https://sanbs.org.za/uncategorized/18765/">Learn More</a></button>
+</center>
+
+</div>
+</div>
+
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+<center>
+
+<div class="love">
+   <p class="love">
+      <b>SEND</b>
+         your empowering message</br>
+      so those you've helped it is with</br>
+      <i>LOVE</i>  <i class="fas fa-heart"></i>
+   </p> </br></br>
+</div>
+
+<img style ="float:right; margin: 0px 30px 30px opx;" src="img/photo1.png" width="700px" heigh="200px"/>
+
+<div class="services">
+
+   <div class="cen">
+     <div class="service">
+       <i class="fas fa-envelope-open-text"></i>
+       
+       <p>If you epress well with words</br> wish them well as a donor</br>and express your love</p>
+     </br>
+      <li><a href="sendmsg.html">Write A Letter ></a></li>
+     </div>
+
+     <div class="service">
+       <i class="fas fa-video"></i>
+       
+       <p>Show and share your love</br> as a donor</p>
+     </br>
+     <li><a href="submitvid.html">Submit Video ></a></li>
+     </div>
+   </br>
+     <div class="service">
+      <i class="fas fa-users"></i>
+      
+      <p>volunteer to ignite passion</br>and spend time with survivers</p>
+    </br>
+    <li><a href="volunteer.html">Volunteer ></a></li>
+    </div>
+
+    <div class="service">
+      <i class="fas fa-laptop"></i>
+      
+      <p>to inspire the team </br> to keep going and</br> save lives</p>
+    </br>
+    <li><a href="https://sanbs.org.za/contact-us/">Email SANBS ></a></li>
+    </div>
+   </div>
+</center>
+</div>
+
+</br></br></br></br></br></br></br></br></br></br></br></br></br>
+
+<div id="section4" >
+</br></br></br>
+   <center>
+      <img style ="float:left; margin: 0px 30px 30px opx;" src="img/photo2.png" width="700px" heigh="200px"/>
+      <p class="title">Join SANBS</br>Community</p>
+
+      <div class="vol">
+
+         <div class="can">
+
+           <div class="vol">
+             <p><b>Volunteering</b></br></br>
+                Join in to help take care of patients and help elders fill in forms</p>
+           </div>
+      
+           <div class="vol">
+           <p><b>Training</b></br></br>
+                Learn and be trained on duties to fufil as a volunteers </p>
+           </div>
+
+         </br>
+
+           <div class="vol">
+             <p><b>Forum</b></br></br>
+               Ideas and views being communicated and initiated for donation growth & saving more</br>lives</p>
+         </div>
+
+          <button class="press"><a href="join.html">Join the Community</a></button>
+          </div>
+          </div>
+</center>
+</div>
+
+</br></br></br>
+<footer class="footer">
+   <div class="contain">
+      <div class="row">
+         <div class="footer-col">
+            <h4>SANBS</h4>
+            <ul>
+               <li><a href="https://sanbs.org.za/">Blog</a></li>
+               <li><a href="https://sanbs.org.za/news/">News</a></li>
+               <li><a href="https://sanbs.org.za/contact-us/">Help Center</a></li>
+               <li><a href="https://sanbs.org.za/contact-us/">Contact Us</a></li>
+               <li><a href="https://sanbs.org.za/faqs/">FAQs</a></li>
+            </ul>
+         </div>
+         <div class="footer-col">
+            <h4>Community</h4>
+            <ul>
+               <li><a href="#">Volunteering</a></li>
+               <li><a href="https://sanbs.org.za/about-us/">About Us</a></li>
+               <li><a href="#">Forum</a></li>
+               <li><a href="https://sanbs.org.za/careers/">Careers</a></li>
+               
+            </ul>
+         </div>
+         <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+               <li><a href="https://sanbs.org.za/donation-process/">Safety Precautions</a></li>
+               <li><a href="https://sanbs.org.za/donor-centres/">Trading Hours</a></li>
+               <li><a href="https://sanbs.org.za/clinical-services/">Services</a></li>
+               
+            </ul>
+            
+            
+         </div>
+         
+
+
+         <div class="footer-col">
+
+            <ul class="box input-box">
+               <li class="link_name">Subscribe our news </li>
+               <li><input type="text" placeholder="Enter your email"></li>
+               <li><input type="button" value="Subscribe"></li>
+             </ul>
+            </br>
+            <p class="foo">by subscribing you agree that you have read our</br><b><i>Terms & Conditions</i></b></p>
+            </br></br></br>
+            
+            <div class="social-links">
+               <a href="https://web.facebook.com/SANBS?_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a>
+               <a href="https://twitter.com/theSANBS"><i class="fab fa-twitter"></i></a>
+               <a href="https://www.instagram.com/thesanbs/"><i class="fab fa-instagram"></i></a>
+               </div>
+            </div>
+         </div>
+         
+         <img style ="float:left;" src="img/logo.png" class="tiny">
+         <p class="link_name" > © SANBS 20/11/2021       English <i class="fas fa-sort-down"></i> </p>
+         
+      </div>
+      
+   </div>
+</footer>
+
+
+
+
+</body>
+</html>

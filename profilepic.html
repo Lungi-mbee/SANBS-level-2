@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"defer></script>
+    <title>Camera Acess</title>
+
+    <style type="text/css">
+    
+        body{
+            background:background: #333333;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;   
+        }
+        
+        .videoObject {
+            border: 12px solid rgb(31, 31, 68);;
+            background:white;
+            height: 500px;
+            width: 700px; 
+            
+                 
+        }
+        
+        .btn {
+            height: 80px;
+            width: 600px;
+            background: rgb(31, 31, 68);
+            font-weight: bold;
+            font-size: 56px;
+            color:white;
+            border-radius: 15px;
+        }
+        
+        .canvas {
+            border: 12px solid rgb(29, 29, 63);
+            background:white;
+            height: 500px;
+            width: 700px; 
+        }
+        
+    </style>
+
+
+</head>
+
+<body>
+    
+    
+    
+    <div class="videoObject">
+        <video id="videoElement" autoplay="true" width="700" height="500"></video>
+    </div> 
+    <button id="capture" class="btn">Capture Image</button>
+                                  
+    
+    
+    <canvas id="image" class="canvas"></canvas>
+</br></br></br>
+
+<input type="file" id="real-file" hidden="hidden" />
+    <button type="button" id="custom-button">CHOOSE A FILE</button>
+    <span id="custom-text">No file chosen, yet.</span>
+</br></br>
+
+<a href="myprofile.html"><button id="capture" class="btn">Submit</button></a>
+                            
+    <script src="script.js"></script>
+    
+</body>
+</html>
